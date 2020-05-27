@@ -1,0 +1,73 @@
+.box{
+    width: 1200px;
+    margin: 0 auto;
+    /* background-color: pink; */
+    overflow: hidden;
+}
+.adv-txt::before{
+    content: '';
+    display: inline-block;
+    width: 38px;
+    height: 38px;
+    /* background:url(../images/youshi.png) no-repeat center;
+    background-size: cover; */
+    vertical-align: -10px;
+    margin-right: 10px;
+}
+.adv{
+    background:url(../images/youshi.png) no-repeat ;
+    /* background-size: cover;  */
+}
+.linian{
+    background: url(../images/linian.png) no-repeat ;
+    /* background-size: cover; */
+}
+.team{
+    background:url(../images/tuandui.png) no-repeat ;
+}
+.box-item{
+    float: left;
+    width: 350px;
+    height: 200px;
+    /* background-color: red; */
+    margin-right: 75px;
+}
+.box2{
+    margin-right: 0;
+}
+.adv-txt{
+    font-size: 24px;
+    font-weight: bolder;
+    color: #555555;
+}
+.adv-speak{
+    margin-top: 30px;
+    font-size: 15px;
+    color: #555555;
+    line-height: 25px;
+}
+.map{
+    width: 1200px;
+    /* width: 100%; */
+    height: 500px;
+    margin: 0 auto;
+    background-color: pink;
+    margin-top: 70px;
+    margin-bottom: 90px;
+}
+@media(max-width:600px){
+    .box{
+        width: 100%;
+    }
+      .box-item{
+          width: 100%;
+          margin: 0 auto;
+      }
+      .adv-txt{
+         width: 100px;
+         margin: 0 auto;
+      }
+      .map{
+          width: 100%;
+      }
+}

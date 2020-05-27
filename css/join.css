@@ -1,0 +1,65 @@
+.jobs{
+    width: 1200px;
+    margin: 0 auto;
+}
+.join-des{
+    width: 100%;
+    /* height: 446px; */
+    overflow: hidden;
+    margin-top: 50px;
+    /* background-color: pink; */
+    border-bottom: 1px solid #525252;
+}
+.join-img,
+.join-exp{
+    float: left;
+    line-height: 28px;
+}
+.join-img{
+    margin-right: 100px;
+    margin-bottom: 35px;
+}
+.join-img img{
+    width:250px ;
+    height: 335px;
+}
+.join-exp span{
+    font-size: 16px;
+    color: #525252;
+    font-weight: bolder;
+}
+.join-exp p{
+    font-size: 14px;
+    color: #525252;
+}
+.java{
+    border-bottom: 0;
+}
+.jianli{
+    /* display: block; */
+    /* background-color: yellow; */
+    width: 280px;
+    font-size: 18px;
+    font-weight: bolder;
+    color: #525252;
+    margin: 0 auto;
+    margin-top: 80px;
+    margin-bottom: 130px;
+}
+@media (max-width:600px){
+    .jobs{
+        width: 100%;
+    }
+    .join-des{
+        border: 0;
+    }
+    
+    .hehe{
+        width: 250px;
+        margin: 0 auto;
+    }
+    
+    .join-exp{
+        text-align: center;
+    }
+}

@@ -1,0 +1,161 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+.header{
+    width: 1200px;
+    height: 80px;
+    margin: 0 auto;
+}
+#logo{
+    width: 120px;
+    height: 80px;
+    background: url(../images/logo.jpg) no-repeat center;
+    float: left;
+}
+.header ul{
+    float: right;
+}
+.header li{
+    position: relative;
+    display: inline-block;
+    height: 80px;
+    text-align: center;
+    line-height: 80px;
+    margin-left: 30px;
+}
+.header li::before{
+    display: none;
+    position: absolute;
+    top: 55px;
+    right: 0;
+    content: '';
+    width: 100%;
+    height: 2px;
+    background-color: #1073d8;
+}
+.header li a{
+    text-decoration: none;
+    color: #333;
+}
+.header li a:hover{
+    color: #1073d8;
+
+}
+.header li:hover::before{
+    display: block;
+}
+.checkbtn{
+    float: right;
+    line-height: 80px;
+    margin-right: 15px;
+    display: none;
+}
+#check{
+display: none;
+}
+.case{
+    position: relative;
+    width: 100%;
+    height: 180px;
+    text-align: center;
+    background-color: #f7f8f9;
+    margin-bottom: 35px;
+}
+.case-txt{
+    position: absolute;
+    top:50%;
+    left:50%  ; 
+    transform:translate(-50%,-50%)
+
+}
+.case .case-s{
+    font-size: 14px;
+    color: #c3c3c3;
+
+}
+.footer{
+    width: 100%;
+    /* height: 500px; */
+    background-color: #323943;
+}
+.footer-c{
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    background-color: #323943;
+    font-size: 15px;
+    color: #c2c2c2;
+
+    /* font-weight: bolder; */
+}
+.footer-txt{
+    padding-top: 60px;
+}
+.footer-txt .footer-cn{ 
+    margin-right: 7px;
+}
+.footer-txt .footer-en{
+    font-size: 14px;
+    color: #c2c2c2;
+}
+.footer-logo,
+.footer-local,
+.footer-zip{
+    display: inline-block;
+    /* width: 300px; */
+    margin-top: 78px;
+    margin-right: 120px;
+    margin-bottom: 110px;
+}
+.footer-bott{
+    width: 100%;
+    line-height: 30px;
+    background-color: #272e36;
+    color: #959595;
+}
+.footer-bott p{
+    text-align: center;
+}
+.font-me{
+    font-size: 24px;
+    font-weight: bolder;
+    /* color: #f3f3f3; */
+}
+@media (max-width:858px){
+    .header{
+        width: 100%;
+        height: 80px;
+    }
+    .checkbtn{
+        float: right;
+        display: block;
+    }
+    .header ul{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .footer-c{
+        width: 100%;
+    }
+    .footer-txt,
+    .footer-logo,
+    .footer-local{
+       display: block;
+       width: 200px;
+       margin: 0 auto;
+       margin-bottom: 25px; 
+    }
+
+   .footer-zip{
+       /* width: 200px; */
+       width: 100%;
+       margin: 0 auto;
+
+
+   }
+}
